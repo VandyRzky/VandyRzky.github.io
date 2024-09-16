@@ -8,7 +8,7 @@ body{
     background-color: rgb(86, 86, 86);
     padding: 0;
     width: 100%;
-    height: 124px;
+    height: 85px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,15 +19,19 @@ body{
     font-weight: 700;
     color: white;
     font-size: 38px;
-    height: fit-content;
+    height: fit-content;    
 }
 .identitas{
-    position: absolute;
-    margin-top: 165px;
+    padding-top: 120px;
     width: 100%;
+}
+.identitas .identitas-container{
+    width: 1240px;
+    height: 289px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
 }
 .identitas .pemesanan{
     height: fit-content;
@@ -68,4 +72,101 @@ body{
     height: 29px;
     font-weight: 600;
     font-size: 24px;
+}
+.pesanan{
+    margin: 45px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.pesanan .pesanan-container{
+    background-color: rgb(233, 233, 233);
+    width: 1240px;
+    height: 480px;
+    box-sizing: border-box;
+    padding: 53px 40px;
+    border-radius: 50px;
+}
+.pesanan .pesanan-container:has(.nasi-goreng){
+    margin-bottom: 45px;
+}
+.pesanan .pesanan-container ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pesanan .pesanan-container ul .gambar img{
+    width: 334px;
+    height: 374px;
+}
+.pesanan .pesanan-container ul .nama{
+    font-weight: 500;
+    font-size: 38px;
+}
+.pesanan .pesanan-container ul .harga{
+    font-weight: 500;
+    font-size: 38px;
+}
+.pembayaran{
+    width: 100%;
+    margin-bottom: 45px;
+}
+.pembayaran .pembayaran-container{
+    width: 1240px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.pembayaran .pembayaran-container .bayar{
+    width: 925px;
+    height: fit-content;
+}
+.pembayaran .pembayaran-container .bayar div{
+    width: 925px;
+    height: 103px;
+    box-sizing: border-box;
+    padding: 32px 25px;
+    background-color: rgb(233, 233, 233);
+    border-radius: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pembayaran .pembayaran-container .bayar .tengah{
+    margin: 21px 0;
+}
+.pembayaran .pembayaran-container .bayar div .bayar-judul{
+    font-size: 32px;
+    font-weight: 700;
+}
+.pembayaran .pembayaran-container .bayar div .bayar-harga{
+    font-size: 32px;
+    font-weight: 600;
+}
+.pembayaran .pembayaran-container .metode{
+    width: 295px;
+    height: 351px;
+    background-color: rgb(233, 233, 233);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.pembayaran .pembayaran-container .metode .metode-judul{
+    font-size: 24px;
+    font-weight: 600;
+}
+.pembayaran .pembayaran-container .metode .metode-form{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+.metode .metode-form label{
+    font-size: 22px;
+    font-weight: 500px;
+    margin-top: 37px;
 }

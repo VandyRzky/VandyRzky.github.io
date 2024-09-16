@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>POSTTEST 2</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-header">BUKTI PEMESANAN</div>
+    </nav>
+    <form action="">
+
+        <section class="identitas">
+            <div class="identitas-container">
+                <div class="pemesanan">
+                    <div class="nama">Nama Pemesan: Abdullah Azam</div>
+                    <div class="alamat">Alamat: Jl. Merdeka No 15, Kota Balikpapan</div>
+                    <div class="tanggal"><label for="tanggal">Tanggal: </label><input type="date" name="tanggal"></div>
+                </div>
+                <div class="layanan">
+                    <img src="Assets-Posttest-2/no-picture.jpg" alt="Gambar orang" class="gambar">
+                    <div class="layanan-nama">Ahmad Nur Fauzan</div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="pesanan">
+            <div class="pesanan-container">
+                <ul>
+                    <li class="gambar"><img src="Assets-Posttest-2/nasi-goreng.jpeg" alt="Nasi Goreng" class="nasi-goreng"></li>
+                    <li class="nama">Nasi Goreng</li>
+                    <li class="harga">Rp. 25.000</li>
+                </ul>
+            </div>
+            <div class="pesanan-container">
+                <ul>
+                    <li class="gambar"><img src="Assets-Posttest-2/es-teh-manis.jpeg" alt="Es Teh Manis"></li>
+                    <li class="nama">Es Teh Manis</li>
+                    <li class="harga">Rp. 5.000</li>
+                </ul>
+            </div>
+        </section>
+        <section class="pembayaran">
+            <div class="pembayaran-container">
+                <div class="bayar">
+                    <div>
+                        <h2 class="bayar-judul">Total Pesanan</h2>
+                        <h2 class="bayar-harga">Rp. 30.000</h2>
+                    </div>
+                    <div class="tengah">
+                        <h2 class="bayar-judul">Pajak</h2>
+                        <h2 class="bayar-harga">Rp. 2.000</h2>
+                    </div>
+                    <div>
+                        <h2 class="bayar-judul">Total Tagihan</h2>
+                        <h2 class="bayar-harga">Rp. 32.000</h2>
+                    </div>
+                </div>
+                <div class="metode">
+                    <div class="metode-judul">Metode Pembayaran</div>
+                    <div class="metode-form">
+                            <label for="metode-radio"><input type="radio" name="metode-radio"> Bank BCA</label>
+                            <label for="metode-radio"><input type="radio" name="metode-radio"> Bank Mandiri</label>
+                            <label for="metode-radio"><input type="radio" name="metode-radio"> OVO</label>
+                            <label for="metode-radio"><input type="radio" name="metode-radio"> GoPay</label>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </form>
+
+</body>
+</html>
