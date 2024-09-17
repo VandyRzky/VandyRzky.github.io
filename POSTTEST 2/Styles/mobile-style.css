@@ -1,0 +1,209 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    overflow: hidden;
+    background-color: rgb(86, 86, 86);
+    padding: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    position: fixed;
+}
+.navbar .nav-header{
+    font-weight: 700;
+    color: white;
+    font-size: 24px;
+    height: fit-content;    
+}
+.identitas{
+    padding-top: 85px;
+    width: 100%;
+}
+.identitas .identitas-container{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 0 auto;
+}
+.identitas .pemesanan{
+    height: fit-content;
+    width: 320px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.identitas .pemesanan div{
+    width: 320px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: rgb(233, 233, 233);
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: 13px;
+    padding: 12px 17px;
+}
+.identitas .pemesanan .alamat{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.identitas .layanan{
+    width: 320px;
+    height: 250px;
+    border-radius: 45px;
+    background-color: rgb(233, 233, 233);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.identitas .layanan .gambar{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin-bottom: 42px;
+}
+.identitas .layanan .layanan-nama{
+    width: 240px;
+    height: 29px;
+    font-weight: 600;
+    font-size: 24px;
+}
+.pesanan{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.pesanan .pesanan-container{
+    background-color: rgb(233, 233, 233);
+    width: 320px;
+    height: 320px;
+    box-sizing: border-box;
+    padding: 21px 60px;
+    border-radius: 50px;
+}
+.pesanan .pesanan-container:has(.nasi-goreng){
+    margin-bottom: 20px;
+}
+.pesanan .pesanan-container ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.pesanan .pesanan-container ul .gambar img{
+    width: 201px;
+    height: 194px;
+}
+.pesanan .pesanan-container ul .nama{
+    font-weight: 500;
+    font-size: 24px;
+    margin: 15px 0;
+}
+.pesanan .pesanan-container ul .harga{
+    font-weight: 500;
+    font-size: 20px;
+}
+.pembayaran{
+    width: 100%;
+    margin-bottom: 31px;
+}
+.pembayaran .pembayaran-container{
+    width: 320px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.pembayaran .pembayaran-container .bayar{
+    width: 320px;
+    height: fit-content;
+    margin: 20px 0;
+}
+.pembayaran .pembayaran-container .bayar div{
+    width: 320px;
+    height: 50px;
+    box-sizing: border-box;
+    padding: 16px 17px;
+    background-color: rgb(233, 233, 233);
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pembayaran .pembayaran-container .bayar .tengah{
+    margin: 20px 0;
+}
+.pembayaran .pembayaran-container .bayar div .bayar-judul{
+    font-size: 15px;
+    font-weight: 700;
+}
+.pembayaran .pembayaran-container .bayar div .bayar-harga{
+    font-size: 15px;
+    font-weight: 600;
+}
+.pembayaran .pembayaran-container .metode{
+    width: 320px;
+    height: 150px;
+    background-color: rgb(233, 233, 233);
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 20px 20px;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+}
+.pembayaran .pembayaran-container .metode .metode-judul{
+    font-size: 15px;
+    font-weight: 700;
+}
+.pembayaran .pembayaran-container .metode .metode-form{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+.metode .metode-form label{
+    font-size: 13px;
+    font-weight: 500px;
+    margin-top: 7px;
+}
+.footer{
+    width: 100%;
+    height: 210px;
+    background-color: rgb(86, 86, 86);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+.footer .footer-desc{
+    width: 197px;
+    height: 78px;
+}
+.footer .footer-desc ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.footer .footer-desc ul li{
+    font-size: 13px;
+    font-weight: 400;
+    color: white;
+}
+.footer .footer-desc ul li a{
+    text-decoration: none;
+    color: white;
+}
+.footer .footer-desc ul .desc-nim{
+    margin: 15px 0;
+}
+.footer .footer-img img{
+    width: 145px;
+    height: 65px;
+}
