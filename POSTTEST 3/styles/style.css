@@ -1,0 +1,120 @@
+body{
+    font-family: "Montserrat", system-ui;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(24, 17, 17);
+    color: rgb(255, 151, 125);
+    /* height: 1000px; */
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(16px);
+    width: 100%;
+    padding: 48px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar .nav-container{
+    width: 557px;
+}
+.navbar .nav-container ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+.navbar .nav-container ul li{
+    color: rgb(255, 151, 125);
+    font-size: 32px;
+    font-weight: 725;
+}
+.home{
+    padding: 180px 0;
+}
+.home .home-container{
+    margin: 0 192px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.home .home-desc{
+    width: 558px;
+}
+.home .home-desc p{
+    color: rgb(251, 211, 203);
+    margin: 0;
+}
+.home .home-desc .desc-head{
+    font-size: 36px;
+    font-weight: 700;
+}
+.home .home-desc .desc-body{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 39px;
+}
+.home .home-desc .desc-link a{
+    text-decoration: none;
+    color: rgb(251, 211, 203);
+    font-size: 24px;
+    font-weight: 600;
+}
+.home .home-img img{
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+}
+
+
+@media screen and (min-width: 360px) and (max-width:768px) {
+    .navbar{
+        padding: 10px 0;
+    }
+    .home{
+        padding: 0;
+    }
+    .home .home-container{
+        display: block;
+        margin: 0;
+    }
+    .home .home-desc{
+        width: 271px;
+        height: 109px;
+        position: absolute;
+        z-index: -1;
+    }
+    .home .home-desc .desc-head{
+        font-size: 20px;
+    }
+    .home .home-desc .desc-body{
+        font-size: 15px;
+        margin: 3px 0;
+    }
+    .home .home-desc .desc-link a{
+        font-size: 16px;
+    }
+    .home .home-img{
+        width: 100%;
+        height: 240px;
+        position: relative;
+        z-index: -10;
+    }
+    .home .home-img img{
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+    .home .home-img .img-overlay{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 0;
+    }
+
+}
