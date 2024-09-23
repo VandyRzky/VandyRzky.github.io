@@ -131,7 +131,7 @@ body{
     width: 320px;
     height: 240px;
     border-radius: 35px;
-    box-shadow: 6px 6px 12px rgba(251, 211, 203, 0.5);
+    box-shadow: 4px 4px 12px rgba(251, 211, 203, 0.5);
 }
 #collection .collection-item p{
     color: rgb(251, 211, 203);
@@ -163,6 +163,43 @@ body{
     background-color: rgb(229, 77, 46);
     box-shadow: inset -4px -3px 5px rgba(94, 28, 22, 0.8);
 }
+#about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0;
+}
+#about .about-judul p{
+    font-size: 36px;
+    font-weight: 700;
+    margin: 40px 0;
+}
+#about .about-container{
+    width: 1018px;
+    height: 387px;
+    background-color: rgb(24, 17, 17);
+    border-radius: 35px;
+    padding: 50px 50px;
+    box-sizing: border-box;
+    box-shadow:  3.5px 3.5px 5px rgba(229, 77, 46, 0.5);
+    font-weight: 700;
+    transition: transform 0.5s ease;
+    color: rgb(251, 211, 203);
+}
+#about .about-container:hover{
+    transform: scale(1.05);
+}
+#about .about-container .about-head{
+    font-size: 128px;
+    margin: 0;
+}
+#about .about-container .about-desc{
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0;
+}
+
 
 
 @media screen and (min-width: 360px) and (max-width:430px) {
@@ -274,5 +311,21 @@ body{
     #collection .collection-button button:hover{
         background-color: rgb(94, 28, 22);
         box-shadow: inset -4px -3px 5px rgba(229, 77, 46, 0.4);
+    }
+    #about .about-judul p{
+        font-size: 22px;
+        margin: 25px 0;
+        margin: 25px 0;
+    }
+    #about .about-container{
+        width: 265px;
+        height: 195px;
+        padding: 25px 25px;
+    }
+    #about .about-container .about-head{
+        font-size: 36px;
+    }
+    #about .about-container .about-desc{
+        font-size: 16px;
     }
 }
