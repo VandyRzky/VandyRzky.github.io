@@ -199,10 +199,75 @@ body{
     font-weight: 600;
     margin: 0;
 }
+#footer{
+    padding: 25px 0;
+    background-color: rgb(251, 211, 203);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#footer .footer-content p{
+    margin: 0;
+    color: rgb(229, 77, 46);
+    font-size: 25px;
+    font-weight: 400;
+}
 
+/* @media screen and (max-width: 1024px) {
+    #collection{
+        display: none;
+    }
+} */
 
+@media screen and (min-width: 768px)  and (max-width: 1024px){
+    .navbar{
+        padding: 30px 0;
+    }
+    #collection .collection-container{
+        width: 758px;
+        justify-content: space-around;
+    }
+    #collection .collection-item{
+        width: 240px;
+        height: 350px;
+        padding: 25px 31px;
+        margin: 14px 0;
+    }
+    #collection .collection-item .item-gambar{
+        width: 204px;
+        height: 107px;
+    }
+    #collection .collection-item .item-judul{
+        margin: 14px 0;
+        font-size: 18px;
+    }
+    #collection .collection-item .item-desc{
+        margin: 0;
+        font-size: 14px;
+    }
+    #collection .collection-button button{
+        width: 169px;
+        height: 44px;
+        font-size: 16px;
+        margin: 14px 0;
+    }
+    #about .about-container{
+        width: 758px;
+        height: 287px;
+        padding: 25px 25px;
+    }
+    #about .about-container .about-head{
+        font-size: 90px;
+    }
+    #about .about-container .about-desc{
+        font-size: 33px;
+    }
+    #footer{
+        padding: 12px 0;
+    }
+}
 
-@media screen and (min-width: 360px) and (max-width:430px) {
+@media screen and (min-width: 360px) and (max-width:760px) {
     .navbar{
         padding: 10px 0;
         background-color: rgba(255, 255, 255, 0.1);
@@ -301,6 +366,7 @@ body{
     }
     #collection .collection-item .item-desc{
         font-size: 14px;
+        margin: 0;
     }
     #collection .collection-button button{
         width: 169px;
@@ -311,6 +377,9 @@ body{
     #collection .collection-button button:hover{
         background-color: rgb(94, 28, 22);
         box-shadow: inset -4px -3px 5px rgba(229, 77, 46, 0.4);
+    }
+    #about{
+        margin: 50px 0;
     }
     #about .about-judul p{
         font-size: 22px;
@@ -326,6 +395,12 @@ body{
         font-size: 36px;
     }
     #about .about-container .about-desc{
+        font-size: 16px;
+    }
+    #footer{
+        padding: 15px 0;
+    }
+    #footer .footer-content p{
         font-size: 16px;
     }
 }
