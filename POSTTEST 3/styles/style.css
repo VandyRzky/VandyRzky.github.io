@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: "Montserrat", system-ui;
     margin: 0;
@@ -107,6 +110,11 @@ body{
     font-size: 36px;
     font-weight: 700;
 }
+#collection .collection-container{
+    display: flex;
+    width: 1226px;
+    justify-content: space-between;
+}
 #collection .collection-item{
     box-sizing: border-box;
     width: 382px;
@@ -141,6 +149,8 @@ body{
 @media screen and (min-width: 360px) and (max-width:430px) {
     .navbar{
         padding: 10px 0;
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: none;
     }
     .navbar .nav-container ul{
         background-color: rgba(255, 255, 255, 0.05);
@@ -209,6 +219,10 @@ body{
         background-color: rgba(0, 0, 0, 0.5);
         position: absolute;
         top: 0;
+    }
+    #collection .collection-container{
+        flex-direction: column;
+        align-items: center;
     }
 
 }
