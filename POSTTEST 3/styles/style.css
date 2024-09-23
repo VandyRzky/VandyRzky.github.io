@@ -16,7 +16,7 @@ body{
     background-color: rgba(255, 255, 255, 0.03);
     backdrop-filter: blur(16px);
     width: 100%;
-    padding: 48px 0;
+    padding: 40px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,6 +109,7 @@ body{
 #collection .judul p{
     font-size: 36px;
     font-weight: 700;
+    margin: 40px 0;
 }
 #collection .collection-container{
     display: flex;
@@ -130,6 +131,7 @@ body{
     width: 320px;
     height: 240px;
     border-radius: 35px;
+    box-shadow: 6px 6px 12px rgba(251, 211, 203, 0.5);
 }
 #collection .collection-item p{
     color: rgb(251, 211, 203);
@@ -143,6 +145,23 @@ body{
     font-size: 16px;
     font-weight: 500;
     text-align: center;
+}
+#collection .collection-button button{
+    width: 266px;
+    height: 61px;
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(251, 211, 203);
+    background-color: rgb(94, 28, 22);
+    box-shadow: inset -4px -3px 5px rgba(229, 77, 46, 0.4);
+    border-radius: 50px;
+    border: none;
+    margin: 40px 0;
+}
+#collection .collection-button button:hover{
+    transition: all 0.5s;
+    background-color: rgb(229, 77, 46);
+    box-shadow: inset -4px -3px 5px rgba(94, 28, 22, 0.8);
 }
 
 
@@ -220,9 +239,40 @@ body{
         position: absolute;
         top: 0;
     }
+    #collection .judul p{
+        margin: 28px 0;
+        font-size: 22px;
+    }
     #collection .collection-container{
         flex-direction: column;
         align-items: center;
+        width: fit-content;
     }
-
+    #collection .collection-item{
+        width: 266px;
+        height: 350px;
+        padding: 25px 31px;
+        margin: 14px 0;
+    }
+    #collection .collection-item .item-gambar{
+        width: 204px;
+        height: 107px;
+    }
+    #collection .collection-item .item-judul{
+        margin: 21px 0;
+        font-size: 18px;
+    }
+    #collection .collection-item .item-desc{
+        font-size: 14px;
+    }
+    #collection .collection-button button{
+        width: 169px;
+        height: 44px;
+        font-size: 16px;
+        margin: 14px 0;
+    }
+    #collection .collection-button button:hover{
+        background-color: rgb(94, 28, 22);
+        box-shadow: inset -4px -3px 5px rgba(229, 77, 46, 0.4);
+    }
 }
