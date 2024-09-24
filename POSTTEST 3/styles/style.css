@@ -155,6 +155,7 @@ body{
     font-size: 16px;
     font-weight: 500;
     text-align: center;
+    margin: 0;
 }
 #collection .collection-button button{
     width: 266px;
