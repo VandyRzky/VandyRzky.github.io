@@ -1,0 +1,90 @@
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    display: none;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(94, 28, 22);  
+    border-radius: 5px;
+}
+body{
+    font-family: "Montserrat", system-ui;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(24, 17, 17);
+    color: rgb(255, 151, 125);
+    /* overflow-x: hidden; */
+    /* height: 1000px; */
+}
+#tambah-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#tambah-data .judul{
+    margin: 50px 0;
+}
+#tambah-data .judul p{
+    margin: 0;
+    font-size: 36px;
+    font-weight: 700;
+}
+#tambah-data .form form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#tambah-data .form input[type= "text"]{
+    background-color: rgb(229, 77, 46);
+    color: rgb(251, 211, 203);
+    width: 849px;
+    height: 78px;
+    border-radius: 40px;
+    border-style: none;
+    box-sizing: border-box;
+    padding: 21px 35px;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+#tambah-data .form input[type= "text"]::placeholder{
+    color: rgb(251, 211, 203);
+    opacity: 0.5;
+}
+#tambah-data .form input[type= "file"]{
+    font-size: 20px;
+}
+#tambah-data .form div{
+    background-color: rgb(229, 77, 46);
+    color: rgb(251, 211, 203);
+    width: 849px;
+    height: 78px;
+    border-radius: 40px;
+    border-style: none;
+    box-sizing: border-box;
+    padding: 21px 35px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#tambah-data .form div label{
+    opacity: 0.5;
+}
+#tambah-data .form input[type="submit"]{
+    width: 849px;
+    height: 78px;
+    background-color: rgb(94, 28, 22);
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(251, 211, 203);
+    border-radius: 40px;
+    border-style: none;
+    box-sizing: border-box;
+    padding: 21px 35px;
+}

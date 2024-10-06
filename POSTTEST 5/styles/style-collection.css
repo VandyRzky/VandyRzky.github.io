@@ -1,0 +1,67 @@
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    display: none;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(94, 28, 22);  
+    border-radius: 5px;
+}
+body{
+    font-family: "Montserrat", system-ui;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(24, 17, 17);
+    color: rgb(255, 151, 125);
+    /* overflow-x: hidden; */
+    /* height: 1000px; */
+}
+#navbar{
+    position: fixed;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(16px);
+    width: 100%;
+    padding: 40px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-sizing: border-box;
+}
+#navbar .nav-judul p{
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+}
+#navbar .nav-login button{
+    border-style: none;
+    font-size: 27px;
+    font-weight: 700;
+    border-radius: 40px;
+    padding: 5px 15px;
+    background-color: rgb(229, 77, 46);
+    color: rgb(251, 211, 203);
+}
+#collection{
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#collection .tabel-kamera{
+    width: 800px;
+}
+#collection .tabel-kamera .tabel-header{
+    background-color: rgb(229, 77, 46);
+    color: rgb(251, 211, 203);
+}
+#collection .tabel-kamera .tabel-desc{
+    background-color: rgb(251, 211, 203);
+    color: rgb(229, 77, 46);
+    text-align: center;
+}
