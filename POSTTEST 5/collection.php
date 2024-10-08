@@ -35,26 +35,15 @@ while ($row = mysqli_fetch_assoc($sql)) {
     </nav>
 
     <section id="collection">
-        <table class="tabel-kamera">
-            <thead>
-                <tr class="tabel-header">
-                    <th>Nama</th>
-                    <th>Foto</th>
-                    <th>Deskripsi</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <?php foreach($kamera as $kmr): ?>
-                <tr class= "tabel-desc">
-                    <td><?php echo $kmr['nama']; ?></td>
-                    <td><img src="uploads/<?php echo $kmr['foto']; ?>" alt="Gambar Kamera" class="upload" width="100"></td>
-                    <td><?php echo $kmr['deskripsi']; ?></td>
-                </tr>
-                <?php endforeach; ?>
-            </tbody>
-
-        </table>
+        <div class="collection-container">
+        <?php foreach($kamera as $kmr): ?>
+            <div class="collection-item">
+                <img src="uploads/<?php echo $kmr['foto']; ?>" alt="Gambar Kamera" class="item-gambar">
+                <p class="item-judul"><?php echo $kmr['nama']; ?></p>
+                <p class="item-desc"><?php echo $kmr['deskripsi']; ?></p>
+            </div>
+            <?php endforeach; ?>
+        </div>
     </section>
 </body>
 </html>

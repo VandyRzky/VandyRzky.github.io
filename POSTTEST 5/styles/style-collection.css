@@ -49,19 +49,43 @@ body{
 }
 #collection{
     margin-top: 200px;
+    width: 100%;
+}
+#collection .collection-container{
     display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;
+}
+#collection .collection-container::-webkit-scrollbar {
+    display: none; 
+  }
+#collection .collection-container .collection-item{
+    box-sizing: border-box;
+    width: 382px;
+    height: 449px;
+    background-color: rgb(94, 28, 22);
+    border-radius: 35px;
+    padding: 25px 31px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
-#collection .tabel-kamera{
-    width: 800px;
+#collection .collection-item .item-gambar{
+    width: 320px;
+    height: 240px;
+    border-radius: 35px;
+    box-shadow: 4px 4px 12px rgba(251, 211, 203, 0.5);
 }
-#collection .tabel-kamera .tabel-header{
-    background-color: rgb(229, 77, 46);
-    color: rgb(251, 211, 203);
+#collection .collection-item .item-judul{
+    margin: 21px 0;
+    font-size: 30px;
+    font-weight: 700;
 }
-#collection .tabel-kamera .tabel-desc{
-    background-color: rgb(251, 211, 203);
-    color: rgb(229, 77, 46);
+#collection .collection-item .item-desc{
+    font-size: 16px;
+    font-weight: 500;
     text-align: center;
+    margin: 0;
 }
