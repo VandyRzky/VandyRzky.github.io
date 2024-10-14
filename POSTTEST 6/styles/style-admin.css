@@ -1,0 +1,69 @@
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    display: none;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(94, 28, 22);  
+    border-radius: 5px;
+}
+body{
+    font-family: "Montserrat", system-ui;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(24, 17, 17);
+    color: rgb(255, 151, 125);
+    /* overflow-x: hidden; */
+    /* height: 1000px; */
+}
+#data-kamera{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#data-kamera .data-judul p{
+    font-size: 30px;
+    font-weight: 700;
+}
+#data-kamera .tambah-kamera button{
+    border-style: none;
+    background-color: rgb(229, 77, 46);
+    color: rgb(251, 211, 203);
+    padding: 5px 15px;
+    border-radius: 40px;
+    border-style: none;
+    font-size: 25px;
+}
+#data-kamera .tabel-kamera{
+    margin-top: 50px;
+    width: 800px;
+}
+#data-kamera .tabel-kamera .tabel-header{
+    background-color: rgb(229, 77, 46);
+    color: rgb(251, 211, 203);
+}
+#data-kamera .tabel-kamera .tabel-desc{
+    background-color: rgb(251, 211, 203);
+    color: rgb(229, 77, 46);
+    text-align: center;
+}
+#data-kamera .tabel-kamera .tabel-desc .edit-data button{
+    background-color: rgb(229, 77, 46);
+    border-style: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    color: white;
+}
+#data-kamera .tabel-kamera .tabel-desc .hapus-data button{
+    background-color: rgb(255, 0, 0);
+    border-style: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    color: white;
+}

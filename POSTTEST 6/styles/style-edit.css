@@ -1,0 +1,67 @@
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    display: none;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(94, 28, 22);  
+    border-radius: 5px;
+}
+body{
+    font-family: "Montserrat", system-ui;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(24, 17, 17);
+    color: rgb(255, 151, 125);
+    /* overflow-x: hidden; */
+    /* height: 1000px; */   
+}
+#edit-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#edit-data .judul{
+    font-size: 30px;
+    font-weight: 700;
+}
+#edit-data .form form{
+    display: flex;
+    flex-direction: column;
+}
+#edit-data .form input[type="text"]{
+    background-color: rgb(229, 77, 46);
+    color: rgb(251, 211, 203);
+    width: 849px;
+    height: 70px;
+    border-radius: 40px;
+    border-style: none;
+    box-sizing: border-box;
+    padding: 21px 35px;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+#edit-data .form input[type="submit"]{
+    background-color: rgb(94, 28, 22);
+    color: rgb(251, 211, 203);
+    width: 849px;
+    height: 70px;
+    border-radius: 40px;
+    border-style: none;
+    box-sizing: border-box;
+    padding: 21px 35px;
+    margin-top: 30px;
+    font-size: 30px;
+}
+#edit-data .form .foto{
+    background-color: rgb(229, 77, 46);
+    width: 849px;
+    border-radius: 40px;
+    border-style: none;
+    box-sizing: border-box;
+    padding: 21px 35px;
+}
