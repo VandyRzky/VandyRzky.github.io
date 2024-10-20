@@ -7,5 +7,6 @@ hamburgerToggle.addEventListener('click', function() {
     nav.classList.toggle('slide');
 })
 button.addEventListener('click', function(){
-    alert("Anda memasuki halaman collection!!!")
+    alert("Anda harus login dahulu!!!");
+    document.location.href = 'login.php';
 })

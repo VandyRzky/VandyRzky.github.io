@@ -29,7 +29,7 @@ while ($row = mysqli_fetch_assoc($sql)) {
         </div>
         <div class="nav-login">
             <a href="login.php">
-                <button>LOGIN</button>
+                <button>LOGOUT</button>
             </a>
         </div>
     </nav>

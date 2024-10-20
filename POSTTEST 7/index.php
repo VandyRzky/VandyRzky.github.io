@@ -67,7 +67,7 @@
             </div>
         </div>
         <div class="collection-button">
-            <a href="collection.php">
+            <a href="">
                 <button>
                     SHOW MORE
                 </button>
