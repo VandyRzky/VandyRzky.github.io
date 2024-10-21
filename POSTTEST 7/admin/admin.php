@@ -3,6 +3,14 @@ require "../koneksi.php";
 
 $sql = mysqli_query($conn, "SELECT * FROM kamera");
 
+session_start();
+if(!isset($_SESSION['login']) || $_SESSION['role'] !== 'admin'){
+    echo "<script>
+    alert('Anda belum login!');
+    document.location.href = '../Auth/login.php';
+    </script>";
+}
+
 $kamera = [];
 while ($row = mysqli_fetch_assoc($sql)) {
     $kamera[] = $row;
@@ -28,6 +36,10 @@ while ($row = mysqli_fetch_assoc($sql)) {
         </div>
 
         <div class="tambah-kamera">
+            
+            <a href="../Auth/logOut.php">
+                <button>LOGOUT</button>
+            </a>
             <a href="tambah.php">
                 <button>Tambah Data Kamera</button>
             </a>

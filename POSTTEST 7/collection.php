@@ -3,9 +3,28 @@ require "koneksi.php";
 
 $sql = mysqli_query($conn, "SELECT * FROM kamera");
 
+session_start();
+if(!isset($_SESSION['login']) || $_SESSION['role'] !== 'user'){
+    echo "<script>
+    alert('Anda belum login!');
+    document.location.href = 'Auth/login.php';
+    </script>";
+}
+
 $kamera = [];
 while ($row = mysqli_fetch_assoc($sql)) {
     $kamera[] = $row;
+}
+
+if (isset($_GET['cari'])){
+    $cari = htmlspecialchars($_GET['cari']);
+
+    $sql = mysqli_query($conn, "SELECT * FROM kamera WHERE nama LIKE '%$cari%'");
+    $kamera = [];
+    while ($row = mysqli_fetch_assoc($sql)) {
+        $kamera[] = $row;
+    }
+
 }
 ?>
 
@@ -28,11 +47,19 @@ while ($row = mysqli_fetch_assoc($sql)) {
             <p>COLLECTION</p>
         </div>
         <div class="nav-login">
-            <a href="login.php">
+            <a href="Auth/logOut.php">
                 <button>LOGOUT</button>
             </a>
         </div>
     </nav>
+
+    <section id="search">
+        <form action="" method="get">
+            <input type="text" name="cari" id="cari" placeholder="Nama kamera">
+            <button type="submit">Cari</button>
+
+        </form>
+    </section>
 
     <section id="collection">
         <div class="collection-container">

@@ -47,8 +47,38 @@ body{
     background-color: rgb(229, 77, 46);
     color: rgb(251, 211, 203);
 }
-#collection{
+#search{
     margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#search form input{
+    width: 400px;
+    height: 50px;
+    border-style: none;
+    background-color: rgb(229, 77, 46);
+    color: rgb(251, 211, 203);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px 20px;
+    margin: 15px 0;
+}
+#search form input::placeholder{
+    color: rgb(251, 211, 203);
+    opacity: 0.5;
+}
+#search button{
+    height: 50px;
+    border-style: none;
+    background-color: rgb(229, 77, 46);
+    border-radius: 10px;
+    padding: 0 35px;
+    color: rgb(251, 211, 203);
+
+}
+#collection{
+    margin-top: 100px;
     width: 100%;
 }
 #collection .collection-container{

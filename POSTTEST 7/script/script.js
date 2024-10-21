@@ -8,5 +8,4 @@ hamburgerToggle.addEventListener('click', function() {
 })
 button.addEventListener('click', function(){
     alert("Anda harus login dahulu!!!");
-    document.location.href = 'login.php';
 })

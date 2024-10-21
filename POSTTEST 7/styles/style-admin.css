@@ -29,6 +29,10 @@ body{
     font-size: 30px;
     font-weight: 700;
 }
+#data-kamera .tabel-kamera{
+    display: flex;
+    justify-content: space-between;
+}
 #data-kamera .tambah-kamera button{
     border-style: none;
     background-color: rgb(229, 77, 46);

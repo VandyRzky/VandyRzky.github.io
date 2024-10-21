@@ -1,6 +1,14 @@
 <?php 
 require "../koneksi.php";
 
+session_start();
+if(!isset($_SESSION['login']) || $_SESSION['role'] !== 'admin'){
+    echo "<script>
+    alert('Anda belum login!');
+    document.location.href = '../Auth/login.php';
+    </script>";
+}
+
 if (isset($_POST['tambah'])){
     $nama = htmlspecialchars($_POST['nama']);
     $desc = htmlspecialchars($_POST['desc']);
